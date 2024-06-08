@@ -1,0 +1,30 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsIm5hbWUiOiJGYXRoYW4iLCJlbWFpbCI6IkZhdGhhbkBnbWFpbC5jb20iLCJpYXQiOjE3MTc4MTM5MTcsImV4cCI6MTcxNzgxMzkzN30.De7YTcraS88kUD5uLX4ztq61TvMzWRjha-VXfVBkdfI
+
+
+
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "ali",
+    "email": "ali@gmail.com",
+    "password": "ali123",
+    "confPassword": "ali123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "Fathan@gmail.com",
+    "password": "1234567"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
